@@ -6,6 +6,7 @@
     
     <HelloWorld/>
     <SearchBar/>
+    <Map/>
   </div>
 </template>
 
@@ -17,11 +18,13 @@
 
 import HelloWorld from './components/HelloWorld.vue';
 import SearchBar from './components/SearchBar.vue';
+import Map from './components/Map.vue';
 export default {
   name: 'App',
   components: {
     HelloWorld,
-    SearchBar
+    SearchBar,
+    Map
   }
 }
 </script>
@@ -43,3 +46,5 @@ export default {
  
 }
 </style>
+
+
