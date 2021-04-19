@@ -4,7 +4,7 @@
 
 
     <div id = "header" style="position: absolute">
-      <h1 style="weight: 400"> IP Address Tracker</h1>
+      <h1 style="weight: 400"> IP address Tracker</h1>
   
      
       </div>
@@ -44,7 +44,8 @@ a {
   color: #42b983;
 }
 
- .BG{width: 100%;
+ .BG{
+  width: 100%;
   height: 100%;
   position: absolute; top: 0; left: 0;
   background-image: url(../../images/pattern-bg.png) 

@@ -4,7 +4,7 @@
     <body>
   <main class="container-full">
     <header>
-      <h1 style="color: white"> IP Address Tracker </h1>
+      <h1 style="color: white; border-top: 20px;"> IP Address Tracker </h1>
       <SearchBar/>
       <!-- <RefCard/> -->
     </header>
@@ -30,7 +30,7 @@
 
 import SearchBar from './components/SearchBar.vue';
 import Map from './components/Map.vue';
-// import RefCard from './components/RefCard.vue'
+//  import RefCard from './components/RefCard.vue'
 import Footer from './components/Footer.vue';
 export default {
   name: 'App',
@@ -52,7 +52,7 @@ export default {
 
 
 header{
-  width: 1440px;
+  
   height: 250px;
   margin: 0 auto;
  background-image: url(../images/pattern-bg.png) ;

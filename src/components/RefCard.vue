@@ -7,7 +7,7 @@
 
 <script>
 export default {
-  name: 'SearchBar'
+  name: 'RefCard'
 }
 </script>
 
@@ -33,7 +33,10 @@ li {
 a {
   color: #42b983;
 }
+b-card{
 
+background-color: white;
+}
 
 
 
