@@ -1,12 +1,23 @@
-
-
 <template>
-  <div id="app">
-   
+  <div id="app">   
+
+    <body>
+  <main class="container-full">
+    <header>
+      <h1 style="color: white"> IP Address Tracker </h1>
+      <SearchBar/>
+      <!-- <RefCard/> -->
+    </header>
+    <div class="map"></div>
+  </main>
+</body>
     
-    <HelloWorld/>
-    <SearchBar/>
+    
+    
     <Map/>
+    <Footer style="text-align: center; position: absolute; bottom: 100px"/>
+
+    
   </div>
 </template>
 
@@ -16,15 +27,19 @@
 
 <script>
 
-import HelloWorld from './components/HelloWorld.vue';
+
 import SearchBar from './components/SearchBar.vue';
 import Map from './components/Map.vue';
+// import RefCard from './components/RefCard.vue'
+import Footer from './components/Footer.vue';
 export default {
   name: 'App',
   components: {
-    HelloWorld,
+    
     SearchBar,
-    Map
+    // RefCard,
+    Map,
+    Footer
   }
 }
 </script>
@@ -36,14 +51,20 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
 
+header{
+  width: 1440px;
+  height: 250px;
+  margin: 0 auto;
+ background-image: url(../images/pattern-bg.png) ;
 
+}
 #app {
   font-family: 'Rubik', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
- 
+
 }
 </style>
 

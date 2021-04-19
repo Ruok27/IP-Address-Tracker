@@ -1,16 +1,12 @@
 <template>
 
   <div style="height: 500px; width: 100%">
-    <div style="height: 200px; overflow: auto;">
+    <!-- <div style="height: 200px; overflow: auto;">
       <p>First marker is placed at {{ withPopup.lat }}, {{ withPopup.lng }}</p>
       <p>Center is at {{ currentCenter }} and the zoom is: {{ currentZoom }}</p>
-      <button @click="showLongText">
-        Toggle long popup
-      </button>
-      <button @click="showMap = !showMap">
-        Toggle map
-      </button>
-    </div>
+      
+      
+    </div> -->
     <l-map
       v-if="showMap"
       :zoom="zoom"
@@ -26,26 +22,26 @@
       />
       <l-marker :lat-lng="withPopup">
         <l-popup>
-          <div @click="innerClick">
+          <!-- <div @click="innerClick">
             I am a popup
             <p v-show="showParagraph">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
               sed pretium nisl, ut sagittis sapien. Sed vel sollicitudin nisi.
               Donec finibus semper metus id malesuada.
             </p>
-          </div>
+          </div> -->
         </l-popup>
       </l-marker>
       <l-marker :lat-lng="withTooltip">
         <l-tooltip :options="{ permanent: true, interactive: true }">
-          <div @click="innerClick">
+          <!-- <div @click="innerClick">
             I am a tooltip
             <p v-show="showParagraph">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
               sed pretium nisl, ut sagittis sapien. Sed vel sollicitudin nisi.
               Donec finibus semper metus id malesuada.
             </p>
-          </div>
+          </div> -->
         </l-tooltip>
       </l-marker>
     </l-map>
@@ -99,3 +95,9 @@ export default {
   }
 };
 </script>
+
+
+
+ <style>
+
+ </style>

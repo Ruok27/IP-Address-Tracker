@@ -4,6 +4,9 @@ import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { LMap, LTileLayer, LMarker } from 'vue2-leaflet';
 import 'leaflet/dist/leaflet.css';
+require('dotenv').config();
+
+
 
 Vue.component('l-map', LMap);
 Vue.component('l-tile-layer', LTileLayer);
